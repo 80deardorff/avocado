@@ -1,0 +1,134 @@
+/* RESET FOR BROWSERS */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f2d3;
+}
+
+/* NAVIGATION BAR */
+nav {
+  height: 100px;
+  width: 100%;
+  background-color: #fc906d;
+  display: inline-flex;
+  color: #fefbe6;
+  font-family: 'Chewy', cursive;
+  font-size: 2em;
+  justify-content: space-between;
+}
+ul.left {
+  margin: 0 auto 0 75px;
+  padding: 0;
+  width: auto;
+  height: 100%;
+  display: flex;
+}
+ul.left li{
+  height: 100%;
+  margin: 0;
+  display: inherit;
+  line-height: 100px;
+}
+.avocado img {
+  height: 2em;
+  padding: 17px 0 17px 0;
+}
+ul.right {
+  margin: 0 75px 0 auto;
+  padding: 0;
+  width: auto;
+  height: 100%;
+  display: inline-flex;
+}
+a {
+  height: 100%;
+  margin: 0 30px;
+  display: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+a :hover {
+  color: #fcf3b6;
+}
+ul.right a li{
+  margin: 0;
+  height: 100%;
+  display: inherit;
+  line-height: 100px;
+}
+
+/* SEARCH BOX */
+div.search-box {
+  display: flex;
+  justify-content: flex-end;
+}
+div.search-box input {
+  margin: 50px 75px 50px auto;
+  height: 50px;
+  width: 300px;
+  font-size: 2em;
+  box-shadow: 10px 10px 30px grey;
+  background-color: lightgrey;
+}
+
+/* MAIN CONTENT */
+div.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+div.main-image {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 50px;
+  display: inline-block;
+}
+div.main-image img {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+}
+div.content {
+  max-width: 770px;
+  box-sizing: border-box;
+  margin: 0;
+  padding-right: 50px;
+  display: inline-block;
+}
+div.content p{
+  margin: 0;
+  color: #81b071;
+  font-family: 'Chewy', cursive;
+  font-size: 3em;
+}
+span.avocado {
+  font-weight: 600;
+}
+span.web,
+span.app {
+  color: #fc906d;
+}
+
+/* FOOTER */
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+  ul.right {
+    display: none;
+  }
+  ul.left {
+    margin: 0 auto 0 auto;
+  }
+  div.search-box input {
+    margin: 50px auto;
+  }
+  div.wrapper {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  div.content {
+    padding: 50px;
+  }
+}
