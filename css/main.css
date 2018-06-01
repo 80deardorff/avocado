@@ -11,7 +11,7 @@ nav {
   width: 100%;
   background-color: #fc906d;
   display: inline-flex;
-  color: #fefbe6;
+  color: #f7f2d3;
   font-family: 'Chewy', cursive;
   font-size: 2em;
   justify-content: space-between;
@@ -32,6 +32,7 @@ ul.left li{
 .avocado img {
   height: 2em;
   padding: 17px 0 17px 0;
+  box-sizing: content-box;
 }
 ul.right {
   margin: 0 0 0 auto;
@@ -48,14 +49,25 @@ nav ul a {
   color: inherit;
   text-decoration: none;
 }
-nav ul a :hover {
+ul.right a :hover {
   color: #fcf3b6;
+}
+ul.right a {
+  text-decoration: none;
 }
 ul.right a li{
   margin: 0;
   height: 100%;
   display: inherit;
   line-height: 100px;
+}
+.btn-group {
+  display: none;
+}
+#dropdownMenuLink,
+.dropdown-menu {
+  background-color: #89ba95;
+  color: #f7f2d3;
 }
 
 /* SEARCH BOX */
@@ -157,8 +169,11 @@ footer a {
   width: auto;
   margin: 30px 20px;
 }
+footer a :hover {
+  color: #fcf3b6;
+}
 .fab {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 /* MEDIA QUERIES */
@@ -182,5 +197,20 @@ footer a {
   }
   div.content {
     padding: 50px 50px 0;
+  }
+  .btn-group {
+    display: initial;
+    position: relative;
+    margin: 25px 5px;
+    margin-left: -64px;
+    padding-right: 15px;
+  }
+  .dropdown-item {
+    color: #f7f2d3;
+  }
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    color: #fcf3b6;
+    background-color: #89ba95;
   }
 }
